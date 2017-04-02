@@ -17,8 +17,6 @@ Route::get('/', function () {
 
 Route::get('/user/{id}', 'UserController@find');
 
-
-/* RESTful bookstrore route*/
 Route::group(['prefix' => 'books'], function(){
     //list all
     Route::get('/', 'BookStoreController@index')->name('books.index');
